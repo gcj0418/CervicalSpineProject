@@ -203,21 +203,9 @@ python HRNet-Facial-Landmark-Detection/tools/visualize_spine.py --cfg experiment
 
 ## 📄 Documents
 
-| Document | Description |
-|----------|-------------|
-| [`outputs/comparison_table_all.md`](outputs/comparison_table_all.md) | Full quantitative comparison report (4 phases) |
-| [`outputs/midterm_report_keypoint_detection.md`](outputs/midterm_report_keypoint_detection.md) | Mid-term report (Chinese) |
-| [`outputs/实习记录.md`](outputs/实习记录.md) | Research internship log |
-| [`REPRODUCTION_SUMMARY.md`](REPRODUCTION_SUMMARY.md) | Reproduction guide & code fixes |
-| [`VLD.md`](VLD.md) | VLD experiment documentation |
 
----
+ [`outputs/comparison_table_all.md`](outputs/comparison_table_all.md) | Full quantitative comparison report (4 phases) 
 
-## 🤝 Collaboration
-
-- **Cooperating Hospital**: 仁济医院 (Renji Hospital), Department of Spinal Surgery
-- **Supervising Physician**: 王琨 (Wang Kun)
-- **Research Goal**: Support automated Cobb angle measurement and implant segmentation verification for the parent project
 
 ---
 
