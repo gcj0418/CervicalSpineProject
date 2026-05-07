@@ -1,0 +1,689 @@
+{
+  "src_root": "E:\\CervicalSpineProject\\data\\RENJI\\201-300",
+  "out_root": "E:\\CervicalSpineProject\\Vertebra-Landmark-Detection\\data_renji_vld_quickcheck",
+  "preview_root": "E:\\CervicalSpineProject\\Vertebra-Landmark-Detection\\data_renji_vld_quickcheck_preview",
+  "total_pairs": 96,
+  "kept": 35,
+  "skipped": 61,
+  "expected_points": 56,
+  "keep_if_mismatch": false,
+  "splits": {
+    "train": 67,
+    "val": 14,
+    "test": 15
+  },
+  "details": [
+    {
+      "split": "train",
+      "case": "LI_KUI_DX__20241219",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219\\LI_KUI_DX__20241219.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CHUAN_JUN_DX__20240117",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎左侧位_20240117\\LI_CHUAN_JUN_DX__20240117.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎左侧位_20240117\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_DE_QUN_DX_Cervical-spine_20210424_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_Cervical-spine_20210424_1\\LI_DE_QUN_DX_Cervical-spine_20210424_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_Cervical-spine_20210424_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_1\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIN_YI_JUN_DX_Cervical-spine_20240930_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_2\\JIN_YI_JUN_DX_Cervical-spine_20240930_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIN_BAO_HONG_DX__20240122",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122\\JIN_BAO_HONG_DX__20240122.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIA_DE_ZHI_DX__20250415_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_DE_ZHI_DX_颈椎左侧位_20250415_2\\JIA_DE_ZHI_DX__20250415_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_DE_ZHI_DX_颈椎左侧位_20250415_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_2\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129_1\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CHUAN_JUN_DX__20240117",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎过伸位_20240117\\LI_CHUAN_JUN_DX__20240117.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎过伸位_20240117\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_DE_QUN_DX__20240508",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎右侧位_20240508\\LI_DE_QUN_DX__20240508.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎右侧位_20240508\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_2\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_BAO_QUAN_DX_Cervical-spine_20250121_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_3\\LI_BAO_QUAN_DX_Cervical-spine_20250121_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_3\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HONG_2_DX_Cervical-spine_20210306_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_3\\LI_HONG_2_DX_Cervical-spine_20210306_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_3\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_BAO_QUAN_DX_Cervical-spine_20250121_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_2\\LI_BAO_QUAN_DX_Cervical-spine_20250121_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_LAN_YING_DX__20250304_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304_2\\LI_LAN_YING_DX__20250304_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LE_YUE_FANG_CR_Cervical_spine_lat_20210818_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_2\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_FAN_LIN_DX__20240328",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328\\KONG_FAN_LIN_DX__20240328.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_DE_QUN_DX__20240508",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎过屈位_20240508\\LI_DE_QUN_DX__20240508.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎过屈位_20240508\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIN_WEI_CHEN_DX__20240521_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521_2\\JIN_WEI_CHEN_DX__20240521_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CAO_YAN_DX__20250410_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410_2\\LI_CAO_YAN_DX__20250410_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HONG_2_DX_Cervical-spine_20210306_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_1\\LI_HONG_2_DX_Cervical-spine_20210306_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_LIN_DX__20240807",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎过伸位_20240807\\KONG_LIN_DX__20240807.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎过伸位_20240807\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIN_YI_JUN_DX_Cervical-spine_20240930_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_1\\JIN_YI_JUN_DX_Cervical-spine_20240930_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HUI_YUAN_DX__20241127",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎过屈位_20241127\\LI_HUI_YUAN_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎过屈位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_1\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20190108_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_2\\LI_MEI_FEN_DX_Cervical-spine_20190108_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_HAI_YING_CR_Cervical_spine_lat_20210118",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HAI_YING_CR_Cervical_spine_lat_20210118\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KANG_JIAN_LONG_DX_Cervical-spine_20211116_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_3\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_3\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HUA_ZHEN_DX__20241128",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎过伸位_20241128\\LI_HUA_ZHEN_DX__20241128.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎过伸位_20241128\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HUI_YUAN_DX__20241127",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎过伸位_20241127\\LI_HUI_YUAN_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎过伸位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LE_YUE_FANG_CR_Cervical_spine_lat_20210818",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_LIN_DX__20240807",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎右侧位_20240807\\KONG_LIN_DX__20240807.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎右侧位_20240807\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_FAN_LIN_DX__20240328_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328_1\\KONG_FAN_LIN_DX__20240328_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20240506_4",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_4\\LI_MEI_FEN_DX_Cervical-spine_20240506_4.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_4\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_BAO_QUAN_DX_Cervical-spine_20250121_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_1\\LI_BAO_QUAN_DX_Cervical-spine_20250121_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_BAO_QUAN_DX_Cervical-spine_20250121_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_JIA_DX__20240524",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎过伸位_20240524\\LI_JIA_DX__20240524.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎过伸位_20240524\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_HONG_DI_DX__20240410",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎过伸位_20240410\\JIANG_HONG_DI_DX__20240410.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎过伸位_20240410\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KANG_JIAN_LONG_DX_Cervical-spine_20211116_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_2\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_ZU_XING_DX__20240116",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116\\JIANG_ZU_XING_DX__20240116.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KANG_YU_LAN_DX__20250307",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎过伸位_20250307\\KANG_YU_LAN_DX__20250307.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎过伸位_20250307\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KANG_YU_LAN_DX__20250307",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎过屈位_20250307\\KANG_YU_LAN_DX__20250307.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎过屈位_20250307\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_XIA_DX__20240812_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812_1\\JIANG_XIA_DX__20240812_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HUA_ZHEN_DX__20241128",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎过屈位_20241128\\LI_HUA_ZHEN_DX__20241128.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎过屈位_20241128\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HONG_1_DX_Cervical-spine_20210306_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_2\\LI_HONG_1_DX_Cervical-spine_20210306_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CHENG_YING_DX_Cervical-spine_20211223_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_1\\LI_CHENG_YING_DX_Cervical-spine_20211223_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIA_YING_DX__20240506_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506_2\\JIA_YING_DX__20240506_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIN_YI_JUN_DX_Cervical-spine_20240930_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_3\\JIN_YI_JUN_DX_Cervical-spine_20240930_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_YI_JUN_DX_Cervical-spine_20240930_3\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HUI_YUAN_DX__20241127",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎左侧位_20241127\\LI_HUI_YUAN_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUI_YUAN_DX_颈椎左侧位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_LIN_DX__20240807",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎过屈位_20240807\\KONG_LIN_DX__20240807.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_LIN_DX_颈椎过屈位_20240807\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIA_HONG_FANG_DX__20240822",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822\\JIA_HONG_FANG_DX__20240822.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_SHU_LIN_DX_Cervical-spine_20211117_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_DX_Cervical-spine_20211117_1\\JIANG_SHU_LIN_DX_Cervical-spine_20211117_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_DX_Cervical-spine_20211117_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KANG_YU_LAN_DX__20250307",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎左侧位_20250307\\KANG_YU_LAN_DX__20250307.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_YU_LAN_DX_颈椎左侧位_20250307\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_GUANG_MAN_CR_Cervical_spine_lat_20230217",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_GUANG_MAN_CR_Cervical_spine_lat_20230217\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_ZHAO_DI_DX__20241127",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎过屈位_20241127\\JIANG_ZHAO_DI_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎过屈位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CHENG_YING_DX_Cervical-spine_20211223_3",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_3\\LI_CHENG_YING_DX_Cervical-spine_20211223_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_3\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_ZU_XING_DX__20240116_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116_1\\JIANG_ZU_XING_DX__20240116_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIA_YING_DX__20240506",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506\\JIA_YING_DX__20240506.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIA_YING_DX__20240506_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506_1\\JIA_YING_DX__20240506_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_YING_DX_颈椎左侧位_20240506_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_ZHAO_DI_DX__20241127",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎过伸位_20241127\\JIANG_ZHAO_DI_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎过伸位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LE_YUE_FANG_CR_Cervical_spine_lat_20210818_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_1\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LE_YUE_FANG_CR_Cervical_spine_lat_20210818_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_CHUAN_JUN_DX__20240117",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎过屈位_20240117\\LI_CHUAN_JUN_DX__20240117.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHUAN_JUN_DX_颈椎过屈位_20240117\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_LAN_YING_DX__20250304_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304_1\\LI_LAN_YING_DX__20250304_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304_1\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "JIANG_XIA_DX__20240812_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812_2\\JIANG_XIA_DX__20240812_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_HONG_2_DX_Cervical-spine_20210306_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_2\\LI_HONG_2_DX_Cervical-spine_20210306_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_2_DX_Cervical-spine_20210306_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "KONG_FAN_LIN_DX__20240328_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328_2\\KONG_FAN_LIN_DX__20240328_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KONG_FAN_LIN_DX_颈椎左侧位_20240328_2\\F.mrk.json"
+    },
+    {
+      "split": "train",
+      "case": "LI_JIA_DX__20240524",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎过屈位_20240524\\LI_JIA_DX__20240524.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎过屈位_20240524\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "JIANG_ZHAO_DI_DX__20241127",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎左侧位_20241127\\JIANG_ZHAO_DI_DX__20241127.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZHAO_DI_DX_颈椎左侧位_20241127\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "JIA_DE_ZHI_DX__20250415_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_DE_ZHI_DX_颈椎左侧位_20250415_1\\JIA_DE_ZHI_DX__20250415_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_DE_ZHI_DX_颈椎左侧位_20250415_1\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20190108_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_3\\LI_MEI_FEN_DX_Cervical-spine_20190108_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_3\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_CHENG_YING_DX_Cervical-spine_20211223_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_2\\LI_CHENG_YING_DX_Cervical-spine_20211223_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CHENG_YING_DX_Cervical-spine_20211223_2\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20190108_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_1\\LI_MEI_FEN_DX_Cervical-spine_20190108_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20190108_1\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_CAO_YAN_DX__20250410",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410\\LI_CAO_YAN_DX__20250410.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_LAN_YING_DX__20250304",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304\\LI_LAN_YING_DX__20250304.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_LAN_YING_DX_颈椎左侧位_20250304\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "JIANG_ZU_XING_DX__20240116_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116_2\\JIANG_ZU_XING_DX__20240116_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_ZU_XING_DX_颈椎左侧位_20240116_2\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_HONG_1_DX_Cervical-spine_20210306_3",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_3\\LI_HONG_1_DX_Cervical-spine_20210306_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_3\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20240506_7",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_7\\LI_MEI_FEN_DX_Cervical-spine_20240506_7.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_7\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_DE_QUN_DX__20240508",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎过伸位_20240508\\LI_DE_QUN_DX__20240508.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_DE_QUN_DX_颈椎过伸位_20240508\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "JIN_WEI_CHEN_DX__20240521",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521\\JIN_WEI_CHEN_DX__20240521.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "JIN_BAO_HONG_DX__20240122_1",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122_1\\JIN_BAO_HONG_DX__20240122_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122_1\\F.mrk.json"
+    },
+    {
+      "split": "val",
+      "case": "LI_KUI_DX__20241219_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219_1\\LI_KUI_DX__20241219_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_MEI_FEN_DX_Cervical-spine_20240506_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_1\\LI_MEI_FEN_DX_Cervical-spine_20240506_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_MEI_FEN_DX_Cervical-spine_20240506_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIA_HONG_FANG_DX__20240822_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822_2\\JIA_HONG_FANG_DX__20240822_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822_2\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_CAO_YAN_DX__20250410_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410_1\\LI_CAO_YAN_DX__20250410_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_CAO_YAN_DX_颈椎左侧位_20250410_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_HUA_ZHEN_DX__20241128",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎左侧位_20241128\\LI_HUA_ZHEN_DX__20241128.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HUA_ZHEN_DX_颈椎左侧位_20241128\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIANG_HONG_DI_DX__20240410",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎右侧位_20240410\\JIANG_HONG_DI_DX__20240410.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎右侧位_20240410\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_HONG_1_DX_Cervical-spine_20210306_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_1\\LI_HONG_1_DX_Cervical-spine_20210306_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_HONG_1_DX_Cervical-spine_20210306_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_KUI_DX__20241219_2",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219_2\\LI_KUI_DX__20241219_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_KUI_DX_颈椎左侧位_20241219_2\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIANG_HONG_DI_DX__20240410",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎过屈位_20240410\\JIANG_HONG_DI_DX__20240410.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_HONG_DI_DX_颈椎过屈位_20240410\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIANG_XIA_DX__20240812",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812\\JIANG_XIA_DX__20240812.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_XIA_DX_颈椎左侧位_20240812\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIN_BAO_HONG_DX__20240122_2",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122_2\\JIN_BAO_HONG_DX__20240122_2.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_BAO_HONG_DX_颈椎左侧位_20240122_2\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIN_WEI_CHEN_DX__20240521_3",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521_3\\JIN_WEI_CHEN_DX__20240521_3.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIN_WEI_CHEN_DX_颈椎前后位_20240521_3\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "KANG_JIAN_LONG_DX_Cervical-spine_20211116_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_1\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\KANG_JIAN_LONG_DX_Cervical-spine_20211116_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIA_HONG_FANG_DX__20240822_1",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822_1\\JIA_HONG_FANG_DX__20240822_1.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIA_HONG_FANG_DX_颈椎左侧位_20240822_1\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129",
+      "status": "ok",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\JIANG_SHU_LIN_CR_Cervical_spine_lat_20211129\\F.mrk.json"
+    },
+    {
+      "split": "test",
+      "case": "LI_JIA_DX__20240524",
+      "status": "skip_points_mismatch:52",
+      "image": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎右侧位_20240524\\LI_JIA_DX__20240524.nii.gz",
+      "json": "E:\\CervicalSpineProject\\data\\RENJI\\201-300\\LI_JIA_DX_颈椎右侧位_20240524\\F.mrk.json"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+OUTPUT_DIR: 'HRNet-Facial-Landmark-Detection/outputs'
+LOG_DIR: 'HRNet-Facial-Landmark-Detection/outputs'
+GPUS: (0, )
+WORKERS: 0
+PRINT_FREQ: 20
+
+DATASET:
+  DATASET: RUIJIN
+  ROOT: '../D-CeLR'
+  TRAINSET: '../D-CeLR/data/ruijin_npy_direct/train.txt'
+  TESTSET: '../D-CeLR/data/ruijin_npy_direct/test.txt'
+  FLIP: false
+  SCALE_FACTOR: 0.15
+  ROT_FACTOR: 10
+
+MODEL:
+  NAME: 'hrnet'
+  NUM_JOINTS: 52
+  INIT_WEIGHTS: true
+  PRETRAINED: 'models/HRNet_W18_C_pretrained.pth'
+  SIGMA: 2.0
+  IMAGE_SIZE:
+    - 256
+    - 256
+  HEATMAP_SIZE:
+    - 64
+    - 64
+  EXTRA:
+    FINAL_CONV_KERNEL: 1
+    STAGE2:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 2
+      BLOCK: BASIC
+      NUM_BLOCKS:
+        - 4
+        - 4
+      NUM_CHANNELS:
+        - 18
+        - 36
+      FUSE_METHOD: SUM
+    STAGE3:
+      NUM_MODULES: 4
+      NUM_BRANCHES: 3
+      BLOCK: BASIC
+      NUM_BLOCKS:
+        - 4
+        - 4
+        - 4
+      NUM_CHANNELS:
+        - 18
+        - 36
+        - 72
+      FUSE_METHOD: SUM
+    STAGE4:
+      NUM_MODULES: 3
+      NUM_BRANCHES: 4
+      BLOCK: BASIC
+      NUM_BLOCKS:
+        - 4
+        - 4
+        - 4
+        - 4
+      NUM_CHANNELS:
+        - 18
+        - 36
+        - 72
+        - 144
+      FUSE_METHOD: SUM
+
+TRAIN:
+  BATCH_SIZE_PER_GPU: 4
+  SHUFFLE: true
+  BEGIN_EPOCH: 0
+  END_EPOCH: 60
+  RESUME: false
+  OPTIMIZER: 'adam'
+  LR: 0.0001
+  WD: 0.0
+  LR_STEP: [30, 50]
+  MOMENTUM: 0.0
+  NESTEROV: false
+
+TEST:
+  BATCH_SIZE_PER_GPU: 4
