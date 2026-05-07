@@ -13,8 +13,8 @@
 </div>
 
 <p align="center">
-  <img src="outputs/best_results/RENJI/figures/bar_comparison.png" width="48%">
-  <img src="outputs/best_results/RUIJIN/figures/bar_comparison.png" width="48%">
+  <img src="outputs/best_results/RENJI/figures/RENJI_bar_comparison.png" width="48%">
+  <img src="outputs/best_results/RUIJIN/figures/RUIJIN_bar_comparison.png" width="48%">
 </p>
 
 <div align="center">
