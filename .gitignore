@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Model Weights & Large Files
+*.pth
+*.pkl
+*.ckpt
+*.h5
+*.onnx
+
+# Training/Inference Outputs (keep best_results and paper_figures)
+outputs/training_*/
+outputs/inference_*/
+outputs/ensemble_optimize_*/
+!outputs/best_results/
+!outputs/paper_figures/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+tensorboard/
+logs/
+
+# Data (raw data should not be committed)
+data/
+*.nii
+*.nii.gz
+*.dcm
+
+# Temporary files
+*.tmp
+*.bak
