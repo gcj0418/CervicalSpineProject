@@ -204,7 +204,7 @@ python HRNet-Facial-Landmark-Detection/tools/visualize_spine.py --cfg experiment
 ## 📄 Documents
 
 
- [`outputs/comparison_table_all.md`](outputs/comparison_table_all.md) | Full quantitative comparison report (4 phases) 
+[`outputs/comparison_table_all.md`](outputs/comparison_table_all.md) | Full quantitative comparison report (4 phases) 
 
 
 ---
