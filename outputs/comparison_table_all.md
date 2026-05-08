@@ -215,4 +215,4 @@
 | HRNet RUIJIN 预训练 e60 | `HRNet-Facial-Landmark-Detection/outputs/inference_ruijin_spine_ruijin_hrnet_w18_pretrained_e60/logs/comparison_table.md` |
 | Ensemble RENJI | `outputs/ensemble_optimize_renji/grid_search_results.md` |
 | Ensemble RUIJIN | `outputs/ensemble_optimize_ruijin/grid_search_results.md` |
-| 论文级图表 | `outputs/paper_figures/` |
+| 图表 | `outputs/paper_figures/` |

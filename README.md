@@ -30,11 +30,11 @@
 
 ## ✨ Highlights
 
-- 🏥 **真实临床数据**：与仁济医院脊柱外科合作，覆盖两家医院、两种分辨率（0.125 / 0.28 mm/px）
+- 🏥 **真实临床数据**：覆盖两家医院、两种分辨率（0.125 / 0.28 mm/px）
 - 🔬 **三范式系统对比**：CenterNet (VLD) / HRNet / Transformer (D-CeLR) 首次在颈椎脊柱任务上横向评测
 - 🚀 **四项有效优化**：迁移学习 ↓34% | TTA ↓26% | ImageNet预训练 ↓21~26% | Ensemble融合 ↓15~25%
 - 📊 **统一评估体系**：Hungarian Matching + resolution-aware mm误差，跨医院、跨方法公平对比
-- 🎨 **论文级可视化**：Error Distribution / CDF / Bland-Altman / Worst Samples 完整分析
+- 🎨 **可视化图表**：Error Distribution / CDF / Bland-Altman / Worst Samples 完整分析
 
 ---
 
