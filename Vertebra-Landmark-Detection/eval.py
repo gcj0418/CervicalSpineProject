@@ -143,7 +143,7 @@ class Network(object):
 
 
     def eval(self, args, save):
-        save_path = 'weights_'+args.dataset
+        save_path = args.weights_dir if getattr(args, 'weights_dir', None) else 'weights_' + args.dataset
         # support multiple checkpoints separated by comma
         resumes = [r.strip() for r in args.resume.split(',')] if ',' in args.resume else [args.resume]
         models = []
@@ -242,7 +242,7 @@ class Network(object):
             ori_image = dsets.load_image(dsets.img_ids.index(img_id)).copy()
             h,w,c = ori_image.shape
             pts0 = inverse_letterbox_coords(pts0, w, h, args.input_w, args.input_h)
-            # sort the y axis
+            # sort the y axis (top-to-bottom ordering = C2..T1)
             sort_ind = np.argsort(pts0[:,1])
             pts0 = pts0[sort_ind]
             pr_landmarks = []
@@ -357,7 +357,7 @@ class Network(object):
         return SMAPE
 
     def eval_three_angles(self, args, save):
-        save_path = 'weights_'+args.dataset
+        save_path = args.weights_dir if getattr(args, 'weights_dir', None) else 'weights_' + args.dataset
         self.model = self.load_model(self.model, os.path.join(save_path, args.resume))
         self.model = self.model.to(self.device)
         self.model.eval()

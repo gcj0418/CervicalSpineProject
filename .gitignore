@@ -25,8 +25,61 @@ env/
 outputs/training_*/
 outputs/inference_*/
 outputs/ensemble_optimize_*/
+outputs/cobb_*/
+outputs/notebook.md
+outputs/ruijin_preview/
+outputs/*.docx
+outputs/实习记录*
+outputs/个人实习*
 !outputs/best_results/
 !outputs/paper_figures/
+
+# Sub-project outputs
+D-CeLR/outputs/
+Vertebra-Landmark-Detection/outputs/
+Vertebra-Landmark-Detection/data_*_preview/
+HRNet-Facial-Landmark-Detection/outputs/
+HRNet-Facial-Landmark-Detection/HRNet-Facial-Landmark-Detection/outputs/
+HRNet-Facial-Landmark-Detection/experiments/300w/
+HRNet-Facial-Landmark-Detection/experiments/aflw/
+HRNet-Facial-Landmark-Detection/experiments/cofw/
+HRNet-Facial-Landmark-Detection/experiments/wflw/
+cobb_app/outputs/
+
+# Raw & test data
+data_raw/
+test_images_renji_raw/
+
+# Preview & check images
+vis_check_7vert/
+
+# Debug & temp scripts
+debug_*.py
+_test_*.py
+_patch_*.py
+analyze_single_case.py
+batch_visualize.py
+check_gt_*.py
+compute_cobb_angles.py
+compute_cobb_angles_v2.py
+generate_ensemble_predictions.py
+generate_midterm_report_docx.py
+generate_personal_internship_docx.py
+insert_personal_notes*.py
+predict_cobb.py
+prepare_test_images_from_raw.py
+regen_vis.py
+test_fusion_fixed.py
+visualize_comparison.py
+
+# Temp visualizations
+viz_*.png
+gt_format_check.png
+*_final_vis.png
+*_fusion_vis.png
+
+# Personal documents
+*.docx
 
 # IDE
 .vscode/

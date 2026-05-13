@@ -49,6 +49,11 @@ class BaseDataset(data.Dataset):
 
     def load_gt_pts(self, annopath):
         pts = loadmat(annopath)['p2']   # num x 2 (x,y)
+        pts = pts.reshape(-1, 2).astype(np.float32)
+        # Truncate to first 28 points (7 vertebrae) before rearranging.
+        # RENJI: first 28 = front C2..T1;  RUIJIN: first 28 = vertebrae C2..T1.
+        if pts.shape[0] > 28:
+            pts = pts[:28, :]
         pts = rearrange_pts(pts)
         if pts.shape[0] > self.max_points:
             pts = pts[:self.max_points, :]
