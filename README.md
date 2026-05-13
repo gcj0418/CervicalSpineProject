@@ -56,6 +56,8 @@ python main.py
 
 > 评估基于 RENJI test 集（29 例），仅统计 front 28 个椎体角点。
 
+**评估标准**：像素级欧氏距离乘以图像 spacing（mm/px）换算为物理距离。RENJI 数据 spacing 约 0.125 mm/px，RUIJIN 约 0.28 mm/px。推理前对预测点和 GT 均做方向统一（椎体在左）与角点排序归一化，以保证终板角点一一对应。
+
 ---
 
 ## 技术背景：模型复现与优化过程
