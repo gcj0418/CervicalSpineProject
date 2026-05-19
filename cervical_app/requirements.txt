@@ -1,0 +1,8 @@
+torch>=1.7.0
+numpy>=1.19.0
+opencv-python>=4.5.0
+Pillow>=8.0.0
+PyYAML>=5.0
+yacs>=0.1.8
+PyQt5>=5.15.0
+nibabel>=3.0.0

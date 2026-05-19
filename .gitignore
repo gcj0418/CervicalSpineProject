@@ -21,66 +21,6 @@ env/
 *.h5
 *.onnx
 
-# Training/Inference Outputs (keep best_results and paper_figures)
-outputs/training_*/
-outputs/inference_*/
-outputs/ensemble_optimize_*/
-outputs/cobb_*/
-outputs/notebook.md
-outputs/ruijin_preview/
-outputs/*.docx
-outputs/实习记录*
-outputs/个人实习*
-!outputs/best_results/
-!outputs/paper_figures/
-
-# Sub-project outputs
-D-CeLR/outputs/
-Vertebra-Landmark-Detection/outputs/
-Vertebra-Landmark-Detection/data_*_preview/
-HRNet-Facial-Landmark-Detection/outputs/
-HRNet-Facial-Landmark-Detection/HRNet-Facial-Landmark-Detection/outputs/
-HRNet-Facial-Landmark-Detection/experiments/300w/
-HRNet-Facial-Landmark-Detection/experiments/aflw/
-HRNet-Facial-Landmark-Detection/experiments/cofw/
-HRNet-Facial-Landmark-Detection/experiments/wflw/
-cobb_app/outputs/
-
-# Raw & test data
-data_raw/
-test_images_renji_raw/
-
-# Preview & check images
-vis_check_7vert/
-
-# Debug & temp scripts
-debug_*.py
-_test_*.py
-_patch_*.py
-analyze_single_case.py
-batch_visualize.py
-check_gt_*.py
-compute_cobb_angles.py
-compute_cobb_angles_v2.py
-generate_ensemble_predictions.py
-generate_midterm_report_docx.py
-generate_personal_internship_docx.py
-insert_personal_notes*.py
-predict_cobb.py
-prepare_test_images_from_raw.py
-regen_vis.py
-test_fusion_fixed.py
-visualize_comparison.py
-
-# Temp visualizations
-viz_*.png
-gt_format_check.png
-*_final_vis.png
-*_fusion_vis.png
-
-# Personal documents
-*.docx
-
 # IDE
 .vscode/
 .idea/
@@ -100,8 +40,9 @@ Thumbs.db
 tensorboard/
 logs/
 
-# Data (raw data should not be committed)
+# Data & medical images
 data/
+data_raw/
 *.nii
 *.nii.gz
 *.dcm
@@ -109,3 +50,33 @@ data/
 # Temporary files
 *.tmp
 *.bak
+
+# =============================================================================
+# Keep only: cervical_app (code only) + Vertebra-Landmark-Detection (training)
+# =============================================================================
+
+# App weights (keep directory, ignore .pth)
+cervical_app/checkpoints/*.pth
+
+# Sub-projects NOT related to final VLD training
+D-CeLR/
+HRNet-Facial-Landmark-Detection/
+hrnet-vld_portable/
+
+draft_box/
+
+# VLD training outputs & datasets
+Vertebra-Landmark-Detection/outputs/
+Vertebra-Landmark-Detection/data_*/
+Vertebra-Landmark-Detection/weights*/
+Vertebra-Landmark-Detection/__pycache__/
+Vertebra-Landmark-Detection/*_preview/
+Vertebra-Landmark-Detection/*.log
+
+# Project-level outputs & experiments (keep evaluations/)
+outputs/
+temp_*/
+!evaluations/
+
+# Personal documents
+*.docx
