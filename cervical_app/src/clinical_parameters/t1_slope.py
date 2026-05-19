@@ -76,6 +76,25 @@ def draw_t1_slope(image: np.ndarray, pts: np.ndarray) -> np.ndarray:
     p2 = (int(cx + dx), int(cy + dy))
     cv2.line(vis, p1, p2, color, 2, lineType=cv2.LINE_AA)
 
-    cv2.putText(vis, f"T1={angle:.1f}°", (int(cx) + 10, int(cy) - 10),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2, lineType=cv2.LINE_AA)
+    # Use PIL for Unicode degree symbol (OpenCV putText does not support °)
+    from PIL import Image, ImageDraw, ImageFont
+    import os
+    vis_rgb = cv2.cvtColor(vis, cv2.COLOR_BGR2RGB)
+    pil_img = Image.fromarray(vis_rgb)
+    draw = ImageDraw.Draw(pil_img)
+
+    font = None
+    for fp in ['C:/Windows/Fonts/msyh.ttc', 'C:/Windows/Fonts/simhei.ttf', 'C:/Windows/Fonts/simsun.ttc']:
+        if os.path.exists(fp):
+            try:
+                font = ImageFont.truetype(fp, 20)
+                break
+            except Exception:
+                pass
+    if font is None:
+        font = ImageFont.load_default()
+
+    # PIL uses RGB; color (255,0,255) in BGR is magenta -> same in RGB since R==B
+    draw.text((int(cx) + 10, int(cy) - 10), f"T1={angle:.1f}°", fill=(255, 0, 255), font=font)
+    vis = cv2.cvtColor(np.array(pil_img), cv2.COLOR_RGB2BGR)
     return vis
