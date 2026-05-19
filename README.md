@@ -2,7 +2,7 @@
 
 # 颈椎侧位 X 光片关键点检测与测量
 
-**本项目最终交付一个可直接运行的桌面应用 `cervical_app/`，基于 HRNet + VLD 融合模型实现颈椎侧位 X 光片多参数自动测量。**
+**本项目最终交付一个可直接运行的桌面应用 `cervical_app/`，基于拆分 VLD 双模型（椎体 28 点 + 关节突 28 点）实现颈椎侧位 X 光片多参数自动测量。**
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.8+-orange)](https://pytorch.org/)
@@ -73,7 +73,7 @@ python main.py
 | RENJI | 3-method (0.4/0.3/0.3) | **2.36 mm** | **68.8%** |
 | RUIJIN | HRNet+VLD (0.5/0.5) | **1.56 mm** | **76.9%** |
 
-> 完整对比报告见 [`outputs/comparison_table_all.md`](outputs/comparison_table_all.md)
+> 完整对比报告见 [`evaluations/comparison_table_all.md`](evaluations/comparison_table_all.md)
 
 ### 第四阶段：VLD 拆分改进（本阶段新增）
 
@@ -90,7 +90,7 @@ python main.py
 | 原始 VLD 56 点 | 3.28 mm | 58.4% | 82.7% |
 | **拆分融合 56 点** | **2.04 mm** | **68.4%** | **89.8%** |
 
-> 当前 `cervical_app` 仍使用 HRNet + VLD 融合架构，后续计划将拆分后的双 VLD 模型集成进应用推理流程。
+> `cervical_app` 已集成拆分双 VLD 模型作为默认推理后端。
 
 ---
 
@@ -98,13 +98,16 @@ python main.py
 
 ```
 ├── cervical_app/                   # 桌面应用（最终成果）
-├── Vertebra-Landmark-Detection/    # VLD (CenterNet-based) 复现、训练与拆分实验
-├── D-CeLR/                         # D-CeLR (ResNet34 + Transformer) 复现与训练
-├── HRNet-Facial-Landmark-Detection/ # HRNet-W18 复现与训练
-├── outputs/                        # 实验结果与可视化
-├── draft_box/                      # 实验草稿与中间脚本
-├── eval_fusion_56pts.py            # 拆分模型融合评估脚本
-├── ensemble_optimize.py            # 融合权重网格搜索
+│   ├── src/                        # 推理、GUI、临床参数计算
+│   ├── checkpoints/                # 模型权重（.pth 被忽略，保留目录）
+│   ├── images/                     # 示例图片
+│   └── main.py                     # 应用入口
+├── Vertebra-Landmark-Detection/    # VLD (CenterNet-based) 训练代码
+│   ├── main.py                     # 训练/评估入口
+│   ├── dataset.py                  # 数据加载
+│   ├── spinal_net.py / decoder.py  # 模型定义与解码
+│   └── data_renji_vld_*/           # 拆分数据集（vertebrae / facets）
+├── evaluations/                    # 各阶段实验对比报告
 ├── convert_renji_to_vld_dataset.py # 数据格式转换
 ├── convert_ruijin_to_vld_dataset.py
 └── README.md
@@ -138,6 +141,8 @@ python main.py --phase train --dataset renji \
 
 ### 融合评估
 
+评估脚本位于 `draft_box/eval_fusion_56pts.py`（实验草稿目录，已加入 `.gitignore`）：
+
 ```bash
 cd draft_box
 python eval_fusion_56pts.py
@@ -147,8 +152,8 @@ python eval_fusion_56pts.py
 
 ## 文档
 
-- [前期完整量化对比报告](evaluations/01_comparison_table_all.md)
-- [VLD 拆分实验总结](evaluations/05_SPLIT_EXPERIMENT_SUMMARY.md)
+- [前期完整量化对比报告](evaluations/comparison_table_all.md)
+- [VLD 拆分实验总结](evaluations/SPLIT_EXPERIMENT_SUMMARY.md)
 
 ---
 
