@@ -226,14 +226,14 @@ def draw_cobb(image: np.ndarray, pts: np.ndarray):
     max_cobb = compute_max_cobb(pts)
     diag = diagnose(lordosis)
 
+    ix = iy = None
     try:
         t = np.linalg.solve(A, b)
         ix, iy = int(c2_mx + t[0]*d2[0]), int(c2_my + t[0]*d2[1])
-        cv2.putText(vis, f"Cobb={lordosis:.1f}°", (ix-40, iy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 165, 255), 2)
     except np.linalg.LinAlgError:
         pass
     
+    # --- Render all Unicode text with PIL (OpenCV putText cannot display °) ---
     vis_rgb = cv2.cvtColor(vis, cv2.COLOR_BGR2RGB)
     pil_img = Image.fromarray(vis_rgb)
     draw = ImageDraw.Draw(pil_img)
@@ -249,6 +249,9 @@ def draw_cobb(image: np.ndarray, pts: np.ndarray):
                 pass
     if font is None:
         font = ImageFont.load_default()
+    
+    if ix is not None and iy is not None:
+        draw.text((ix-40, iy-10), f"Cobb={lordosis:.1f}°", fill=(255, 165, 0), font=font)
     
     texts = [f"C2-C7 前凸角: {lordosis:.1f}°", f"最大 Cobb 角: {max_cobb:.1f}°", f"诊断: {diag}"]
     for i, text in enumerate(texts):
